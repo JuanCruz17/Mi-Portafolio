@@ -188,10 +188,17 @@ main {
     width: 333px;
     height: 567px;
 }
+.contenedor-imagen-proyecto {
+    width: 100%;
+    height: 30%;
+}
+.contenedor-imagen-proyecto img {
+    width: 100%;
+    height: 100%;
+}
 .contenedor-proyecto img {
     padding: 0px;
-    max-width: 100%;
-    max-height: 100%;
+
 }
 .contenedor-proyecto h4 {
     font-family: "Poppins", sans-serif;
@@ -201,8 +208,9 @@ main {
     text-align: center;
 }
 .datos-proyecto {
+    height: 80%;
     padding: 20px;
-    height:fit-content;
+    margin: 0px auto;
 }
 .parrafo-descripcion{
     font-family: "Poppins", sans-serif;
@@ -211,6 +219,360 @@ main {
     font-size: 18px;
 }
 .parrafo-tecnologias {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+}
+.parrafo-tecnologias span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+/*#endregion*/
+/*#region MIS TECNOLOGÍAS*/
+.contenido{
+    margin: auto 10%;
+    width:100%;
+}
+.contenido p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    color: #666666
+}
+.contenedor-logos-tecnologias{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contenedor-logos-tecnologias img{
+    margin: 70px auto;
+    max-width: 100%;
+    height:auto;
+}
+.contenedor-flex-margin{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width:100%;
+}
+/*#endregion*/
+/*#region CONTACTO*/
+.titulo-contacto {
+    margin: auto 10%;
+    width:100%;
+}
+.titulo-contacto h1{
+    background: linear-gradient(to right, #13B0F5, #E70FAA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: "DM Sans", sans-serif;
+    font-size: 54px;
+    text-align: center;
+    margin-bottom: 300px;
+}
+.titulo-contacto hr{
+    margin-bottom:50px;
+    border: none;
+    height: 2px;
+    background-color:#42446E;
+}
+.contacto-datos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    color:#A7A7A7;
+}
+.contacto-datos a{
+    color:#A7A7A7;
+    text-decoration: none;
+}
+/*#endregion*/
+/*#region RESPONSIVE DESIGN 800px-1300px*/
+@media screen and (min-width:801px) and (max-width:1300px) {
+    .contenedor-barra-navegacion{
+        width:93%;
+        font-size: 0.9rem;
+    }
+    .contenedor-logo-creador img{
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+    }
+    .contenedor-nombre-foto{
+        font-size: 20px;
+    }
+    .contenedor-proyecto{
+        width: 203px;
+        height: 397px;
+    }
+    .contenedor-proyecto p, .contenedor-proyecto h4, .contenedor-proyecto span{
+        font-size: 0.9rem;
+    }
+    .titulo-contacto h1{
+        font-size:44px;
+    }
+    .contacto-datos{
+        font-size:16px;
+    }
+}
+/*#endregion*/
+@media screen and (max-width:800px) {
+    .contenedor-barra-navegacion{
+        width:100%;
+        font-size: 0.65rem;
+        justify-content: center;
+    }
+    #logo-creador-color, #logo-creador-gris{
+       display: none;
+    }
+    .contenedor-barra-navegacion-logos img{
+        width:20px;
+        height:20px;
+    }
+    .contenedor-nombre-foto{
+        font-size: 10px;
+    }
+    .contenedor-proyecto{
+        width: 123px;
+        height: 317px;
+    }
+    .contenedor-proyecto p, .contenedor-proyecto h4, .contenedor-proyecto span{
+        font-size: 0.69rem;
+    }
+    .contenedor-logos-tecnologias img{
+        width:87px;
+        height:87px;
+    }
+    .titulo-contacto h1{
+        font-size:28px;
+    }
+    .contacto-datos{
+        font-size:13px;
+    }
+}
+/*#region ESTILOS GENERALES*/
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #191919;
+}
+::-webkit-scrollbar-thumb {
+    background: #A7A7A7;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+body {
+    background-color: #191919;
+    margin: 0;
+    height: 100%;
+}
+img {
+    padding: 5px;
+}
+.contenedor-logo-creador{
+    max-width: 100%;
+    height: auto;
+}
+/*#endregion*/
+/*#region BARRA DE NAVEGACIÓN*/
+nav {
+    position: fixed;
+    background-color: #191919;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+}
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #A7A7A7;
+    margin: 10px;
+}
+.contenedor-barra-navegacion {
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    margin: 10px auto;
+}
+.contenedor-barra-navegacion-links-logos {
+    font-family: "DM Sans", sans-serif;
+    justify-content: end;
+    align-items: center;
+    display: flex;
+    gap:5px;
+    margin: 10px 0px;
+}
+.contenedor-barra-navegacion-logos {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-barra-navegacion-logos a{
+    margin:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*#endregion*/
+/*#region PÁGINA*/
+main {
+    margin-top: 0px;
+}
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titulo{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 42px;
+    color: #42446E;
+}
+/*#endregion*/
+/*#region INICIO*/
+.contenedor-nombre-foto {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #D9D9D9;
+    margin: 200px 10%;
+    font-size: 30px;
+    display: flex;
+}
+.contenedor-nombre-foto span {
+    background: linear-gradient(to right, #13B0F5, #E70FAA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.contenedor-nombre-foto h1 {
+    margin: auto 0px;
+    width: 70%;
+    padding: 10px
+}
+.contenedor-foto {
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.contenedor-nombre-foto img{
+    max-width: 100%;
+    height:auto;
+}
+/*#endregion*/
+/*#region SOBRE MI*/
+.contendedor-sobre-mi {
+    margin: 50% 10%;
+    width:100%;
+}
+.contendedor-sobre-mi p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    color: #666666
+}
+.contenedor-educación {
+    border-bottom: 3px solid #EBEAED;
+    margin: 20px 0px;
+}
+.contenedor-educación h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: #666666;
+    margin: 0px;
+}
+.contenedor-educación p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+}
+.contenedor-carrera-fulltime {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contenedor-carrera-fulltime button {
+    background-color: #D7FFE0;
+    color: #018C0F;
+    border-radius: 20px;
+    padding: 10px 25px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border-style: none;
+}
+.contenedor-institucion-fecha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.institucion {
+    display: flex;
+    align-items: center;
+}
+/*#endregion*/
+/*#region PROYECTOS*/
+.contenedor-proyectos {
+    margin: 50% 10%;
+    width:100%;
+}
+.contenedor-proyecto {
+    background-color: #363636;
+    border-radius: 10px;
+    color: #CCCCCC;
+    width: 333px;
+    height: 567px;
+}
+.contenedor-proyecto img {
+    padding: 0px;
+    max-width: 100%;
+    max-height: 100%;
+}
+.contenedor-proyecto h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 23px;
+    text-align: center;
+}
+.datos-proyecto {
+    height:70%;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.parrafo-descripcion{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+}
+.parrafo-tecnologias {
+    align-items:flex-end;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -336,7 +698,7 @@ main {
         height: 317px;
     }
     .contenedor-proyecto p, .contenedor-proyecto h4, .contenedor-proyecto span{
-        font-size: 0.69rem;
+        font-size: 0.58rem;
     }
     .contenedor-logos-tecnologias img{
         width:87px;
